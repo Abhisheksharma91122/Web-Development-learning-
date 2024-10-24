@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors in css</title>
+    <style>
+        /* element selectors */
+        div{
+            color: red;
+            background-color: yellow;
+        }
+        /* class selectors */
+        .abhi{
+            color: pink;
+            background-color: magenta;
+        }
+        /* id selectors */
+        #adi{
+            color:white;
+            background-color: black;
+        }
+        /* child selector */
+        div > p {
+            color: yellow;
+            background-color: orange;
+        }
+        /* descendant selector */
+        div p {
+            color: white;
+            background-color: maroon;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: rgb(218, 162, 162);
+        }
+        a:active{
+            color: magenta;
+        }
+        a:hover{
+            color: red;
+        }
+        p:first-child{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>selectors in css</h1>
+    <main>
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="abhi">
+        I am abhishek 
+        <p>I am a para in a div</p>
+    </div>
+    <div id="adi">
+        I am aditya 
+    </div>
+    <a target="_blank" href="http://www.google.com">Google link</a>
+    <a href="https://www.facebook23.com/">facebook</a>
+</body>
+</html>
