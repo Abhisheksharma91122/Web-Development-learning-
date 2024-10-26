@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css boxmodel</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .abhi{
+            background-color: magenta;
+        }
+        .abhi1{
+            color: orange;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid black;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        .abhi2{
+            color: red;
+            padding: 10px;
+            margin: 20px;
+            /* margin collapse is a concept in which the margin of greater margin is consider in it */
+            border: 2px solid black;
+            height: 50px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="abhi abhi1">I am abhi</div>
+    <div class="abhi abhi2">
+        I am another abhi
+    </div>
+</body>
+</html>
