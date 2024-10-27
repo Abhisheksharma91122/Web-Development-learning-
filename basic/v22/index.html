@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 14px;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* width: 1080px; */
+            box-sizing: border-box;
+            text-indent: 40%;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;   
+        }
+        .container{
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* width: 1080px; */
+            box-sizing: border-box;
+            width: 80vw;
+            /* height: 10vh; */
+            margin: 20px auto;   
+            /* font-size: 16px; */
+        }
+        .container div{
+            border: 2px solid red;
+            width: 50%;
+            /* this is used to get size for inherit  */
+            /* font-size: 2em; */
+            /* this is used to get size for root */
+            /* font-size: 2rem; */
+        }
+        .mycont {
+            box-sizing: border-box;
+            margin: 40px auto;
+            border: 2px solid black;
+            color: blue;
+            background-color: magenta;
+            font-size: 18px;
+            width: 100vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is a box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem soluta nisi facilis asperiores assumenda error possimus recusandae consequuntur vitae, rerum molestiae, architecto fugiat expedita pariatur tenetur voluptas tempora perspiciatis reiciendis in. Dolores asperiores sint maxime ab error alias dolor! Voluptates perspiciatis placeat dolores nostrum illum.
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo soluta, iste quod accusamus maxime beatae fuga mollitia. Dicta similique sunt tempora labore fugit laudantium fugiat.
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        this is another div
+    </div>
+</body>
+</html>
