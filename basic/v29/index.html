@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visiting card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .border {
+            border: 2px solid black;
+            width: 30vw;
+            height: 80vh;
+            position: relative;
+            top: 60px;
+            margin: auto;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        div img{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 437.600px;
+            border-radius: 8px;
+        } */
+        .card-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .card{
+            width: 350px;
+            border: 2px solid black;
+            height: 70vh;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            position: relative;
+            top: 10px;
+            left: 15px;
+            width: 320px;
+            border-radius: 8px;
+        }
+
+        .button span{
+            position: relative;
+            top: 25px;
+            padding: 5px;
+            margin: 10px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+        }
+        div h2{
+            position: absolute;
+            top: 300px;
+            left: 30px;
+        }
+        .card p{
+            position: relative;
+            top: 90px;
+            left: 10px;
+        }
+        a{
+            position: absolute;
+            bottom: 0px;
+            margin: 22px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1277142237/photo/tourist-with-backpack-at-mountain-lake-background.jpg?s=612x612&w=0&k=20&c=soEVfApNuSchY2kQmCSNHMDBDbPHXfi0uvl8bahAUuQ=" alt="nature">   
+            <div class="button">
+                <span>Nature</span>
+                <span>Lake</span>
+            </div>
+            <h2>Abhishek sharma</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione harum provident fugit, odio debitis neque est quas reiciendis omnis quaerat veniam iure enim explicabo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sunt esse.</p>
+            <a target="_blank" href="https://www.google.com/" class="bnf">Read more</a>
+        </div>
+    </div>
+</body>
+
+</html>
