@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: gray;
+    padding: 35px;
+    display: flex;
+}
+.card{
+    background-color: white;
+    width: 344px;
+    height: 520px;
+    border-radius: 7px;
+    margin: 30px;
+}
+.image{
+    padding: 5px;
+}
+.image img{
+    border-radius: 7px;
+}
+.contain h2{
+    position: relative;
+    top: -9px;
+}
+.contain{
+    padding: 0px 24px;
+    font-family: "Poppins", serif;
+}
+.contain p{
+    position: relative;
+    top: -10px;
+    font-size: 11px;
+    color: gray;
+}
+.capsule{
+    padding: 10px 18px;
+}
+.capsule span{
+    border: 2px solid gray;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin: 5px;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    background-color: rgb(164, 190, 237);
+    color: blue;
+    border-radius: 20px;
+    padding: 9px 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: rgb(213, 213, 234);
+    color: blue;
+}
