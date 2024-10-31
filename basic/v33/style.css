@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --backcolor : red;
+    --buttoncolor : white;
+    --font : "Poppins", serif;
+    --backbutton : black;
+}
+*{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+}
+.navbar{
+    background-color: var(--backcolor);
+    padding: 20px 30px 20px 30px;
+}
+.navdiv{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--buttoncolor);
+    font-family: var(--font);
+}
+li a{
+    color: var(--buttoncolor);
+    font-size: 18px;
+    padding: 25px 40px 25px 40px;
+    font-family: var(--font);
+}
+button{
+    background-color: var(--backbutton) ;
+    border-radius: 14px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 90px;
+}
+button a{
+    color: var(--buttoncolor);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: var(--font);
+}

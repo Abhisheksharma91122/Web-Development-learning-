@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cards{
+    background-color: floralwhite;
+    border: 2px solid black;
+    /* we can used instead of this overflow auto and also we set a margin */
+    display: flow-root;
+}
+img{
+    float: right;
+}
+.card{
+    border: 2px solid black;
+    margin: 3px;
+}
+.card:nth-child(3){
+    clear: right;
+    background-color: aqua;
+}

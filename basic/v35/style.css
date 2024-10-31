@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* .box:first-child{
+    background-color: magenta;
+}
+.box::first-line{
+    color: red;
+} */
+/* .boxes *{
+    background-color: steelblue;
+    border: 2px solid black;
+}
+p,a,.box,[data-color="primary"]{
+    background-color: blue;
+    padding-top: 20px;
+}
+.box:nth-child(odd){
+    background-color: red;
+} */
+.boxes::before{
+    content: "abhishek is good boy";
+    color: blue;
+}
+.boxes::after{
+    content: "Abhi is my short name";
+    color: red;
+}
+::selection{
+    background-color: black;
+    color: aqua;
+}
+.box::first-letter{
+    color: rgb(211, 116, 33);
+    font-size: 30px;
+}
+input::placeholder{
+    color: rgb(101, 101, 162);
+    font-weight: bold;
+    /* font-size: large; */
+}
