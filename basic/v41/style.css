@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.navigation{
+    background-color: white;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-navigation{
+    
+}
+.top-navigation ul{
+    list-style: none;
+    display: flex;
+    gap: 60px ;
+}
+ul li a{
+    color: black;
+    font-size: 1.1em;
+}
+.logo{
+    margin-left: 154px;
+    margin-bottom: 50px;
+}
+nav{
+    margin-bottom: 58px;
+    margin-right: 200px;
+}

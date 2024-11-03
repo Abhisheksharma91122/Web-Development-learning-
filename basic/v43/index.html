@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Navigation Layout</title>
+    <style>
+        .logo {}
+
+        .logo img {
+            height: 57px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        nav .buttons ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .buttons ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        ul li span {
+            padding: 0px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="">
+        </div>
+        <div class="buttons">
+            <ul>
+                <li><span>Products</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                        height="18" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <li><span>For business</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                        height="18" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg> </li>
+                <li><span>Resources</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                        height="18" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <li><span>Support</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                        height="18" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <li><span>Our Company</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                        height="18" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <div>
+                    <img src="image.png" alt="image">
+                </div>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
