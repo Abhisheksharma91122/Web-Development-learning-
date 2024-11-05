@@ -1,0 +1,115 @@
+.logo img {
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Segoe UI";
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li span {
+    padding: 0 5px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 90px;
+}
+.first img{
+    width: 111px;
+}
+.first span{
+    font-size: 48px;
+}
+.first p{
+    font-size: 24px;
+    width: 61vw;
+    text-align: center;
+}
+.btn{
+    background-color: #00b6d1;
+    padding: 16px 22px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.second span{
+    font-size: 22px;
+}
+.second .small{
+    font-size: 12px;
+}
+.second .download{
+    display: flex;
+    align-items: center;
+}
+.items{
+    background: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 25px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+.items .item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.second{
+    margin: auto;
+    max-width: 48vw;
+}
+.blue,.green{
+    background-color: #00b6d1;
+    padding: 11px 11px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+}
+.green{
+    background-color: #5cb85c;
+}
+.download{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 1145px) {
+    .grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}

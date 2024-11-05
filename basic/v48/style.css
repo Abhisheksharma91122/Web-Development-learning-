@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: blue;
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+}
+.ball{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* animation: abhi 5s ease-in-out 1s infinite alternate-reverse  , abhi1 5s ease-in-out 1s infinite alternate-reverse ; */
+    animation: abhi 1s ease-in-out 1s infinite alternate-reverse ;
+}
+.ball{
+    /* animation: abhi2 5s ease-in-out 1s infinite alternate-reverse ; */
+}
+@keyframes abhi {
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(-180px);
+    }
+
+}
+@keyframes abhi1 {
+    0%{transform: translateX(40px);}
+    20%{transform: translateX(80px);}
+    40%{transform: translateX(120px);}
+    60%{transform: translateX(140px);}
+    80%{transform: translateX(160px);}
+    100%{transform: translateX(180px);}
+}
