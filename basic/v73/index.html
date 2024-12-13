@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card generation using DOM concept</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .card {
+            border: 2px solid black;
+            display: flex;
+            padding: 5px;
+            border-radius: 6px;
+            gap: 15px;
+        }
+
+        .card img {
+            width: 250px;
+            border-radius: 5px;
+        }
+
+        .image {
+            position: relative;
+        }
+        .contain h1{
+            font-size: 24px;
+        }
+        h1,p{
+            padding: 10px 0px;
+        }
+        .capsule {
+            position: absolute;
+            bottom: 7px;
+            right: 7px;
+            background: #100f0fd6;
+            padding: 2px;
+            font-size: 14px;
+            color: white;
+            border-radius: 4px;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/mCx5aSEK8YE/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB4h3uLYCuzx1GRi4VEg_QRgdPr0w"
+                    alt="video image">
+                <span class="capsule">32:00</span>
+            </div>
+            <div class="contain">
+                <h1>Introduction to Backend | Sigma Web Dev video #2</h1>
+                <p>CodeWithHarry . 727K views . 2 months ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
