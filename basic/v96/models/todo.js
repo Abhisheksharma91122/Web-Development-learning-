@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 const todoSchema = new mongoose.Schema({
-    title: String,
+    title: {type : String , require : true , default : "Abhishek Sharma"},
     Desc: String,
     isDone: Boolean,
     password: Number

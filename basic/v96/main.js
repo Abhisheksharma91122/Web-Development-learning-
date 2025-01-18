@@ -19,6 +19,11 @@ app.get('/', async(req, res) => {
     res.send('Hello World!')
 })
 
+app.get('/about', async (req , res) => {
+    let todo = await Todo.findOne({})
+    res.json({title : todo.title , description : todo.Desc})
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
