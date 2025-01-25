@@ -14,17 +14,18 @@
 
 <body class="bg-black text-white ">
   <div class="flex container mx-auto h-screen">
-    <div class="first w-[71%] flex-col">
+    <div class="first w-[68%] flex-col">
       <div class="logocontain flex justify-end mt-4 mb-5">
-      <div class="w-3/5 logo invert pl-2">
-        <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
-          <g>
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-          </g>
-        </svg>
+        <div class="w-3/5 logo invert pl-2">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+            <g>
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </g>
+          </svg>
+        </div>
       </div>
-    </div>
-      <div class="sidebar flex justify-end">
+      <!-- this is sidebar of 1st column -->
+      <div class="flex flex-col items-end">
         <ul class="flex-col text-[18px] font-medium w-3/5 list-none">
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><span class="material-symbols-outlined text-[36px]">
               home
@@ -65,10 +66,30 @@
               </g>
             </svg>More</li>
         </ul>
+        <!-- this section is for Post button -->
+        <div class="w-3/5 my-3">
+          <button class="px-20 py-3 font-bold rounded-full bg-[#eff3f4] text-black">Post</button>
+        </div>
       </div>
+      <!-- this is profile section -->
+       <div class="flex justify-end">
+        <div class="w-3/5">
+          <!-- main profile -->
+          <div class="flex justify-start items-center gap-2 p-2 hover:bg-gray-900 hover:rounded-full mr-2 mt-6 hover:cursor-pointer">
+            <img class="h-[40px] w-[40px] rounded-full" src="/+91 91122 91047 20230425_212330.jpg" alt="">
+            <div>
+              <p class="font-bold text-base">Abhishek Sharma</p>
+            <span class="text-[#656a6e] text-base">@Abhishe97845532</span>
+            </div>
+            <span class="material-symbols-outlined">
+              more_horiz
+            </span>
+          </div>
+        </div>
+       </div>
     </div>
 
-    <div class="second border-[1px] border-x-white border-y-black w-full">
+    <div class="second border-[1px] border-x-[#333639] border-y-black w-full">
       BB
       <ul>
         <li>home</li>
@@ -79,13 +100,110 @@
         <li>home</li>
       </ul>
     </div>
-    <div class="third w-[88%] pl-8 pt-1">
-      <div class="search bg-black border border-[#333639] rounded-full w-[349px] h-[45px] flex justify-start items-center p-1 px-3">
+    <div class="third w-[88%] pl-8 pt-1 overflow-auto h-screen">
+      <!-- this is search div -->
+      <div class="bg-black border border-[#333639] rounded-full w-[349px] h-[45px] flex justify-start items-center p-1 px-3 sticky top-0 left-0">
         <span class="material-symbols-outlined text-[22px]">
           search
         </span>
         <input type="text" class="px-1 w-64 bg-black text-white focus:border-none focus:outline-none" placeholder="Search">
       </div>
+      <!-- this is subscribe part -->
+      <div class="flex flex-col bg-black border border-[#333639] rounded-xl w-[349px] mt-5 px-4 py-3 gap-2">
+        <h2 class="text-xl font-bold">Subscribe to Premium</h2>
+        <p class="text-sm">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+        <button class="px-4 py-2 bg-[#1d9bf0] font-bold rounded-full w-fit">Subscribe</button>
+      </div>
+      <!-- this is Whats happening part -->
+      <div class="flex flex-col bg-black border border-[#333639] rounded-xl w-[349px] mt-5 gap-2">
+        <h2 class="text-xl font-bold px-4 py-3">What’s happening</h2>
+        <!-- this is top photo section  -->
+        <div class="photo px-4 py-3 flex gap-[15px] hover:cursor-pointer hover:bg-[#1da1f21a]">
+          <div class="h-[80px] w-[80px] rounded-xl overflow-hidden">
+            <img class="h-full w-full object-cover " src="https://pbs.twimg.com/semantic_core_img/1875997496851263488/BLI4C75l?format=jpg&name=240x240" alt="">
+          </div>
+          <div>
+            <p class="font-bold">Khloé in Wonder Land</p>
+            <span class="text-xs text-[#4e5155]">LIVE</span>
+          </div>
+        </div>
+        <div class="items px-4 py-3 hover:cursor-pointer hover:bg-[#1da1f21a]">
+          <h2 class="font-bold">#ChhaavaTrailer</h2>
+          <p class="text-sm text-[#5a5e62]">Catch Hindi Cinema's Biggest Spectacle Ever. Chhaava Out On 14th Feb</p>
+          <p class="text-xs text-[#5a5e62] flex gap-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="w-[12px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1q142lx r-ip8ujx r-1gs4q39 r-1bwzh9t">
+              <g>
+                <path d="M19.498 3h-15c-1.381 0-2.5 1.12-2.5 2.5v13c0 1.38 1.119 2.5 2.5 2.5h15c1.381 0 2.5-1.12 2.5-2.5v-13c0-1.38-1.119-2.5-2.5-2.5zm-3.502 12h-2v-3.59l-5.293 5.3-1.414-1.42L12.581 10H8.996V8h7v7z" fill="#6e7378"></path>
+              </g>
+            </svg>
+            Promoted by Maddockfilms
+          </p>
+        </div>
+        <div class="items px-4 py-3 hover:cursor-pointer hover:bg-[#1da1f21a]">
+          <h2 class="text-sm text-[#5a5e62]">Trending in India</h2>
+          <p class="font-bold">#AAPTheUnbreakable</p>
+          <p class="text-xs text-[#5a5e62] flex gap-1">
+            1,750 posts
+          </p>
+        </div>
+        <div class="items px-4 py-3 hover:cursor-pointer hover:bg-[#1da1f21a]">
+          <h2 class="text-sm text-[#5a5e62]">Sports · Trending</h2>
+          <p class="font-bold">Rohit Sharma</p>
+          <p class="text-xs text-[#5a5e62] flex gap-1">18.9K posts</p>
+        </div>
+        <div class="items px-4 py-3 hover:cursor-pointer hover:bg-[#1da1f21a]">
+          <h2 class="text-sm text-[#5a5e62]">Trending in India</h2>
+          <p class="font-bold">#nitishkumarreddy</p>
+        </div>
+        <div class="px-4 py-3 hover:cursor-pointer hover:bg-[#1da1f21a] showmore text-[#1c94e5] hover:rounded-xl">
+          <a href="#">Show more</a>
+        </div>
+      </div>
+      <!-- this is who to follow part -->
+       <div class="flex flex-col bg-black border border-[#333639] rounded-xl w-[349px] mt-5 gap-2 mb-11">
+        <h2 class="text-xl font-bold px-4 py-3">Who to follow</h2>
+        <!-- this is items -->
+        <div class="photo px-4 py-3 flex gap-[10px] hover:cursor-pointer hover:bg-[#1da1f21a] items-center">
+          <div class="h-[40px] w-[40px] rounded-full overflow-hidden">
+            <img class="h-full w-full object-cover " src="https://pbs.twimg.com/semantic_core_img/1875997496851263488/BLI4C75l?format=jpg&name=240x240" alt="">
+          </div>
+          <div>
+            <p class="font-bold mb-0 w-40 hover:underline">Ong</p>
+            <span class="text-[#4e5155] mt-0">@OngDevLab</span>
+          </div>
+          <div class="button py-2 px-4 rounded-full bg-[#eff3f4] text-[#0f1419] font-bold ml-[5px]">
+            <button>Follow</button>
+          </div>
+        </div>
+        <div class="photo px-4 py-3 flex gap-[10px] hover:cursor-pointer hover:bg-[#1da1f21a] items-center">
+          <div class="h-[40px] w-[40px] rounded-full overflow-hidden">
+            <img class="h-full w-full object-cover " src="https://pbs.twimg.com/semantic_core_img/1875997496851263488/BLI4C75l?format=jpg&name=240x240" alt="">
+          </div>
+          <div>
+            <p class="font-bold mb-0 w-40 hover:underline">Today In History</p>
+            <span class="text-[#4e5155] mt-0">@URDailyHistory</span>
+          </div>
+          <div class="button py-2 px-4 rounded-full bg-[#eff3f4] text-[#0f1419] font-bold ml-[5px]">
+            <button>Follow</button>
+          </div>
+        </div>
+        <div class="photo px-4 py-3 flex gap-[10px] hover:cursor-pointer hover:bg-[#1da1f21a] items-center">
+          <div class="h-[40px] w-[40px] rounded-full overflow-hidden">
+            <img class="h-full w-full object-cover " src="https://pbs.twimg.com/semantic_core_img/1875997496851263488/BLI4C75l?format=jpg&name=240x240" alt="">
+          </div>
+          <div>
+            <p class="font-bold mb-0 w-40 hover:underline">Jagat Prakash Nadda</p>
+            <span class="text-[#4e5155] mt-0">@JPNadda</span>
+          </div>
+          <div class="button py-2 px-4 rounded-full bg-[#eff3f4] text-[#0f1419] font-bold ml-[5px]">
+            <button>Follow</button>
+          </div>
+        </div>
+        <div class="px-4 py-3 hover:cursor-pointer hover:bg-[#1da1f21a] showmore text-[#1c94e5] hover:rounded-xl">
+          <a href="#">Show more</a>
+        </div>
+       </div>
+
     </div>
   </div>
 </body>
