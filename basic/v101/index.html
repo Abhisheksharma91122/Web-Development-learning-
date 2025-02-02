@@ -13,10 +13,10 @@
 
 
 <body class="bg-black text-white ">
-  <div class="flex container mx-auto h-screen">
-    <div class="first w-[68%] flex-col">
-      <div class="logocontain flex justify-end mt-4 mb-5">
-        <div class="w-3/5 logo invert pl-2">
+  <div class="flex mx-auto h-screen justify-center">
+    <div class="first xl:w-[36%] lg:w-[26%] flex-col">
+      <div class="logocontain flex justify-start sm:justify-end mt-4 mb-5">
+        <div class="lg:w-[95%] xl:w-3/4 md:w-[95%] logo invert pl-2">
           <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
             <g>
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
@@ -25,88 +25,96 @@
         </div>
       </div>
       <!-- this is sidebar of 1st column -->
-      <div class="flex flex-col items-end">
-        <ul class="flex-col text-[18px] font-medium w-3/5 list-none">
+      <div class="flex flex-col md:items-start lg:items-end w-full">
+        <ul class="flex-col text-[18px] font-medium lg:w-[95%] xl:w-3/4 list-none md:w-[95%]">
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><span class="material-symbols-outlined text-[36px]">
               home
-            </span>Home</li>
+            </span><span class="xl:block lg:hidden hidden"> Home </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><span class="material-symbols-outlined text-[36px]">
               search
-            </span>Explore</li>
+            </span><span class="xl:block lg:hidden hidden"> Explore </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><span class="material-symbols-outlined text-[36px]">
               notifications
-            </span>Notifications</li>
+            </span><span class="xl:block lg:hidden hidden"> Notifications </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><span class="material-symbols-outlined text-[36px]">
               mail
-            </span>Messages</li>
+            </span><span class="xl:block lg:hidden hidden"> Messages </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><svg viewBox="0 0 24 24" aria-hidden="true" class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
               <g>
                 <path d="M2.205 7.423L11.745 21h4.241L6.446 7.423H2.204zm4.237 7.541L2.2 21h4.243l2.12-3.017-2.121-3.02zM16.957 0L9.624 10.435l2.122 3.02L21.2 0h-4.243zm.767 6.456V21H21.2V1.51l-3.476 4.946z"></path>
               </g>
-            </svg>Grok</li>
+            </svg><span class="xl:block lg:hidden hidden"> Grok </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><span class="material-symbols-outlined text-[36px]">
               group
-            </span>Communities</li>
+            </span><span class="xl:block lg:hidden hidden"> Communities </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><svg viewBox="0 0 24 24" aria-hidden="true" class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
               <g>
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
               </g>
-            </svg>Premium</li>
+            </svg><span class="xl:block lg:hidden hidden"> Premium </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><svg viewBox="0 0 24 24" aria-hidden="true" class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
               <g>
                 <path d="M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z"></path>
               </g>
-            </svg>Business</li>
+            </svg><span class="xl:block lg:hidden hidden"> Business </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><span class="material-symbols-outlined text-[36px]">
               person
-            </span>Profile</li>
+            </span><span class="xl:block lg:hidden hidden"> Profile </span></li>
           <li class="flex justify-normal items-center gap-3 hover:bg-gray-900 w-fit hover:rounded-[30px] hover:cursor-pointer pr-6 p-2"><svg viewBox="0 0 24 24" aria-hidden="true" class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
               <g>
                 <path d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"></path>
               </g>
-            </svg>More</li>
+            </svg><span class="xl:block lg:hidden hidden"> More </span></li>
         </ul>
         <!-- this section is for Post button -->
-        <div class="w-3/5 my-3">
-          <button class="px-20 py-3 font-bold rounded-full bg-[#eff3f4] text-black">Post</button>
+        <div class="p-2 md:p-0 xl:w-3/4 md:w-[95%] my-3">
+          <button class="xl:px-20 xl:py-3 xl:p-0 font-bold p-2 px-[15px] rounded-full bg-[#eff3f4] text-black"><span class="xl:block lg:hidden hidden">Post</span> <span class="xl:hidden lg:block block">P</span></button>
         </div>
       </div>
       <!-- this is profile section -->
-       <div class="flex justify-end">
-        <div class="w-3/5">
+       <div class="p-2 md:p-0 flex justify-start md:justify-end">
+        <div class="lg:w-[95%] xl:w-3/4 md:w-[95%]">
           <!-- main profile -->
-          <div class="flex justify-start items-center gap-2 p-2 hover:bg-gray-900 hover:rounded-full mr-2 mt-6 hover:cursor-pointer">
+          <div class="flex justify-start items-center gap-2 xl:p-2 lg:p-0 hover:bg-gray-900 hover:rounded-full mr-2 mt-6 hover:cursor-pointer">
             <img class="h-[40px] w-[40px] rounded-full" src="/+91 91122 91047 20230425_212330.jpg" alt="">
-            <div>
-              <p class="font-bold text-base">Abhishek Sharma</p>
-            <span class="text-[#656a6e] text-base">@Abhishe97845532</span>
+            <div class=" justify-center items-center xl:flex lg:hidden hidden">
+              <div>
+                <p class="font-bold text-base">Abhishek Sharma</p>
+                <span class="text-[#656a6e] text-base">@Abhishe97845532</span>
+              </div>
+              <span class="material-symbols-outlined">
+                more_horiz
+              </span>
             </div>
-            <span class="material-symbols-outlined">
-              more_horiz
-            </span>
           </div>
         </div>
        </div>
     </div>
-
-    <div class="second border-[1px] border-x-[#333639] border-y-black w-full">
+    <div class="flex overflow-auto w-full h-screen">
+      <div class="second min-h-screen relative w-full">
+        <div class="absolute top-0 left-0 h-full w-[1px] bg-[#333639]"></div>
+        <div class="absolute top-0 right-0 h-full w-[1px] bg-[#333639]"></div>
       <!-- this is top section  -->
-      <div class="flex py-4 relative">
+       <div class="sticky top-0">
+        <div class="flex py-4 relative top-0 bottom-0">
         <div class="h-1 w-20 bg-blue-800 rounded-full absolute left-[18%] bottom-0 z-10"></div>
         <div class="w-1/2 flex justify-center font-medium">For you</div>
         <div class="w-1/2 flex justify-center font-medium">Following</div>
-      </div>
+        </div>
+       </div>
+        
+      
       <!-- this is section line from top and bottom  -->
        <div class="h-[1px] w-full bg-[#333639]"></div>
 
        <!-- this is what is happening section -->
-        <div class="flex gap-2 mx-2">
+        <div class="hidden md:flex gap-2 mx-2">
           <div class="mt-2">
             <img class="w-4/5 rounded-full" src="https://pbs.twimg.com/profile_images/1619344920233512960/x6afEPDW_bigger.jpg" alt="logo">
           </div>
           <!-- this is input and bottom of that things  -->
           <div class="w-full">
-            <input type="text" class="bg-transparent w-full mt-5 h-7 text-lg" placeholder="What is happening?!">
+            <input type="text" class="bg-transparent w-full mt-5 h-7 text-lg outline-none" placeholder="What is happening?!">
             <div class="text-blue-400 flex items-center gap-1 my-5">
               <span class="material-symbols-outlined">
                 public
@@ -144,9 +152,209 @@
           </div>
         </div>
         <div class="h-[1px] w-full bg-[#333639]"></div>
-        
+
+        <!-- this is posts section -->
+        <div>
+          <div class="post flex m-2">
+            <div class="image">
+              <img class="rounded-full w-[80%]" src="https://pbs.twimg.com/profile_images/1619344920233512960/x6afEPDW_bigger.jpg" alt="">
+            </div>
+            <div class="contain">
+              <span class="font-bold hover:underline hover:cursor-pointer">Cristiano Ronaldo </span><span class="text-gray-600">@Cristiano · Feb 1</span>
+              <div>It’s always fantastic to catch up with my good friend <span class="text-blue-800">@piersmorgan</span></div>
+              <div class="postimg w-[80%] my-2">
+                <img class="rounded-xl" src="https://pbs.twimg.com/media/GipHUdbWMAAWYPp?format=jpg&name=small" alt="">
+                <div class="icons flex justify-between my-2 text-gray-600">
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      chat_bubble
+                    </span>
+                    <span>9.2K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      repeat
+                    </span>
+                    <span>41K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      favorite
+                    </span>
+                    <span>200K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      bar_chart
+                    </span>
+                    <span>221M</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[1px] w-full bg-[#333639]"></div>
+          <div class="post flex m-2">
+            <div class="image">
+              <img class="rounded-full w-[80%]" src="https://pbs.twimg.com/profile_images/1619344920233512960/x6afEPDW_bigger.jpg" alt="">
+            </div>
+            <div class="contain">
+              <span class="font-bold hover:underline hover:cursor-pointer">Cristiano Ronaldo </span><span class="text-gray-600">@Cristiano · Feb 1</span>
+              <div>It’s always fantastic to catch up with my good friend <span class="text-blue-800">@piersmorgan</span></div>
+              <div class="postimg w-[80%] my-2">
+                <img class="rounded-xl" src="https://pbs.twimg.com/media/GipHUdbWMAAWYPp?format=jpg&name=small" alt="">
+                <div class="icons flex justify-between my-2 text-gray-600">
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      chat_bubble
+                    </span>
+                    <span>9.2K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      repeat
+                    </span>
+                    <span>41K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      favorite
+                    </span>
+                    <span>200K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      bar_chart
+                    </span>
+                    <span>221M</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[1px] w-full bg-[#333639]"></div>
+          <div class="post flex m-2">
+            <div class="image">
+              <img class="rounded-full w-[80%]" src="https://pbs.twimg.com/profile_images/1619344920233512960/x6afEPDW_bigger.jpg" alt="">
+            </div>
+            <div class="contain">
+              <span class="font-bold hover:underline hover:cursor-pointer">Cristiano Ronaldo </span><span class="text-gray-600">@Cristiano · Feb 1</span>
+              <div>It’s always fantastic to catch up with my good friend <span class="text-blue-800">@piersmorgan</span></div>
+              <div class="postimg w-[80%] my-2">
+                <img class="rounded-xl" src="https://pbs.twimg.com/media/GipHUdbWMAAWYPp?format=jpg&name=small" alt="">
+                <div class="icons flex justify-between my-2 text-gray-600">
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      chat_bubble
+                    </span>
+                    <span>9.2K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      repeat
+                    </span>
+                    <span>41K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      favorite
+                    </span>
+                    <span>200K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      bar_chart
+                    </span>
+                    <span>221M</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[1px] w-full bg-[#333639]"></div>
+          <div class="post flex m-2">
+            <div class="image">
+              <img class="rounded-full w-[80%]" src="https://pbs.twimg.com/profile_images/1619344920233512960/x6afEPDW_bigger.jpg" alt="">
+            </div>
+            <div class="contain">
+              <span class="font-bold hover:underline hover:cursor-pointer">Cristiano Ronaldo </span><span class="text-gray-600">@Cristiano · Feb 1</span>
+              <div>It’s always fantastic to catch up with my good friend <span class="text-blue-800">@piersmorgan</span></div>
+              <div class="postimg w-[80%] my-2">
+                <img class="rounded-xl" src="https://pbs.twimg.com/media/GipHUdbWMAAWYPp?format=jpg&name=small" alt="">
+                <div class="icons flex justify-between my-2 text-gray-600">
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      chat_bubble
+                    </span>
+                    <span>9.2K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      repeat
+                    </span>
+                    <span>41K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      favorite
+                    </span>
+                    <span>200K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      bar_chart
+                    </span>
+                    <span>221M</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[1px] w-full bg-[#333639]"></div>
+          <div class="post flex m-2">
+            <div class="image">
+              <img class="rounded-full w-[80%]" src="https://pbs.twimg.com/profile_images/1619344920233512960/x6afEPDW_bigger.jpg" alt="">
+            </div>
+            <div class="contain">
+              <span class="font-bold hover:underline hover:cursor-pointer">Cristiano Ronaldo </span><span class="text-gray-600">@Cristiano · Feb 1</span>
+              <div>It’s always fantastic to catch up with my good friend <span class="text-blue-800">@piersmorgan</span></div>
+              <div class="postimg w-[80%] my-2">
+                <img class="rounded-xl" src="https://pbs.twimg.com/media/GipHUdbWMAAWYPp?format=jpg&name=small" alt="">
+                <div class="icons flex justify-between my-2 text-gray-600">
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      chat_bubble
+                    </span>
+                    <span>9.2K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      repeat
+                    </span>
+                    <span>41K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      favorite
+                    </span>
+                    <span>200K</span>
+                  </div>
+                  <div class="flex justify-center items-center">
+                    <span class="material-symbols-outlined">
+                      bar_chart
+                    </span>
+                    <span>221M</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-[1px] w-full bg-[#333639]"></div>
+        </div>
     </div>
-    <div class="third w-[88%] pl-8 pt-1 overflow-auto h-screen">
+
+
+    <div class="third w-[85%] pl-8 pt-1 h-screen lg:block hidden">
       <!-- this is search div -->
       <div class="bg-black border border-[#333639] rounded-full w-[349px] h-[45px] flex justify-start items-center p-1 px-3 sticky top-0 left-0">
         <span class="material-symbols-outlined text-[22px]">
@@ -251,6 +459,8 @@
        </div>
 
     </div>
+    </div>
+    
   </div>
 </body>
 
