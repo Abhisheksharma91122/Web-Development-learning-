@@ -1,0 +1,17 @@
+nav , ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    font-size: large;
+}
+
+ul{
+    gap: 24px;
+    padding: 12px;
+}
+
+nav{
+    background-color: rgb(226, 101, 122);
+}
