@@ -7,7 +7,7 @@ function App() {
     <>
       <Navbar />
       <div className="card">
-        <Card title = "this is 1 card" description = "card 1 desc" />
+        <Card title = "this is 1 Abhishek Card" description = "card 1 desc" />
         <Card title = "this is 2 card" description = "card 2 desc" />
         <Card title = "this is 3 card" description = "card 3 desc" />
         
