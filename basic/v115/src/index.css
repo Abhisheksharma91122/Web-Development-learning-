@@ -1,0 +1,31 @@
+*{
+  /* background-color: black; */
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+}
+
+li{
+  list-style: none;
+}
+.navbar{
+  background-color: blue;
+}
+ul{
+  display: flex;
+  gap: 34px;
+  padding: 20px;
+  color: white;
+}
+
+li a{
+  text-decoration: none;
+}
+.active{
+  color: red;
+  font-weight: bold;
+}
