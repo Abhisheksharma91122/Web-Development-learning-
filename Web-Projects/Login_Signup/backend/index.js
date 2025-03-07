@@ -5,6 +5,7 @@ const Cors = require('cors')
 require('dotenv').config();
 require('./Models/db')
 const AuthRouter = require('./Routes/AuthRouter')
+const ProductRouter = require('./Routes/ProductRouter')
 
 const port = process.env.PORT || 8080
 
@@ -16,6 +17,7 @@ app.use(bodyParser.json())
 app.use(Cors())
 
 app.use('/auth', AuthRouter)
+app.use('/products', ProductRouter)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
