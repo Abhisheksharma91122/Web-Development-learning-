@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import { useState } from 'react'
-import { handleError } from '../utils'
+import { handleError, handleSuccess } from '../utils'
 
 const Signup = () => {
     const [signupInfo, setSignInfo] = useState({
@@ -14,11 +14,11 @@ const Signup = () => {
     const handleChange = (e) => {
         const { name, value } = e.target;
         console.log(name, value);
-        const copyLoginInfo = { ...signupInfo };
-        copyLoginInfo[name] = value;
-        setSignInfo(copyLoginInfo)
+        const copySignupInfo = { ...signupInfo };
+        copySignupInfo[name] = value;
+        setSignInfo(copySignupInfo)
     }
-
+    const navigate = useNavigate();
     const handleSignup = async(e) =>{
         e.preventDefault();
         const {name, email, password} = signupInfo;
@@ -36,9 +36,21 @@ const Signup = () => {
             });
 
             const result = await response.json()
+            const {success, message, error} = result;
+            if (success) {
+                handleSuccess(message)
+                setTimeout(() => {
+                    navigate('/login')
+                }, 2000);
+            } else if(error){
+                const detail = error.details[0].message;
+                handleError(detail)
+            } else if(!success){
+                handleError(message)
+            }
             console.log(result)
         } catch (error) {
-            
+            handleError(error);
         }
 
     }

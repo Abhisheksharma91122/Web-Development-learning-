@@ -37,7 +37,7 @@ const login = async(req,res)=>{
             return res.status(409)
                 .json({ message: errorMsg , success: false })
         }
-        const isPassEqual = bcrypt.compare(password, user.password)
+        const isPassEqual = await bcrypt.compare(password, user.password)
         if (!isPassEqual) {
             return res.status(409)
                 .json({ message: errorMsg , success: false })
