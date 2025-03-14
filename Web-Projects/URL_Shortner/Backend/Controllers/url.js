@@ -1,18 +1,33 @@
 
-const URL = require('../Models/url')
+const UrlModel = require('../Models/url')
+
+function isValidUrl(url) {
+    if (typeof url !== "string" || url.trim() === "") return false; // Ensure it's a valid string
+    try {
+        new URL(url.trim()); // The `URL` constructor validates it
+        return true;
+    } catch (err) {
+        console.log("URL validation error:", err.message); // Debugging
+        return false;
+    }
+}
 
 const generateNewShortURL = async (req, res) => {
     const { nanoid } = await import("nanoid");
     const body = req.body;
     if (!body.url || typeof body.url !== "string") {
         return res.status(400)
-            .json({ message: "url is required" });
+            .json({ message: "url is required", success: false });
+    }
+    console.log(body.url);
+    if (!isValidUrl(body.url)) {
+        return res.status(400).json({ message: "Invalid URL format", success: false });
     }
 
     const ShortID = nanoid(8);
     console.log(ShortID)
     try {
-        const url = new URL({
+        const url = new UrlModel({
             shortURL: ShortID,
             redirectURL: body.url,
             VisitHistory: []
@@ -20,11 +35,11 @@ const generateNewShortURL = async (req, res) => {
 
         await url.save();
 
-        return res.json({ id: ShortID })
+        return res.json({ message: "URL shortened successfully", id: ShortID, success: true })
 
     } catch (error) {
         return res.status(200)
-            .json({ message: `Internal Server error are : ${error}` })
+            .json({ message: `Internal Server error are : ${error}`, success: false })
     }
 
 }
@@ -32,7 +47,7 @@ const generateNewShortURL = async (req, res) => {
 const handleGetAnalytics = async (req, res) => {
     try {
         const shortId = req.params.shortId;
-        const result = await URL.findOne(
+        const result = await UrlModel.findOne(
             {
                 shortURL: shortId
             }
