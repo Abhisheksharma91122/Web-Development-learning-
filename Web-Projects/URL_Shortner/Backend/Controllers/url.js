@@ -53,12 +53,12 @@ const handleGetAnalytics = async (req, res) => {
             }
         )
         if (!result) {
-            return res.status(404).json({ error: "Short URL not found" });
+            return res.status(404).json({ error: "Short URL not found", success: false });
         }
-        return res.json({ totalClick: result.VisitHistory.length, analytics: result.VisitHistory })
+        return res.json({ totalClick: result.VisitHistory.length, analytics: result.VisitHistory, success: true })
     } catch (error) {
         console.error("Error fetching short URL:", error);
-        res.status(500).json({ error: "Internal Server Error" });
+        res.status(500).json({ error: "Internal Server Error", success: false });
     }
 }
 

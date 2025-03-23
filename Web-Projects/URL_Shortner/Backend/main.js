@@ -27,7 +27,7 @@ app.get('/:shortId', async (req, res) => {
     })
 
     if (!entry) {
-      return res.status(404).json({ error: "Short URL not found" });
+      return res.status(404).json({ error: "Short URL not found", success: false });
     }
 
     console.log(entry.redirectURL);
@@ -35,7 +35,7 @@ app.get('/:shortId', async (req, res) => {
 
   } catch (error) {
     console.error("Error fetching short URL:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(500).json({ error: "Internal Server Error", success: false });
   }
 })
 

@@ -38,8 +38,9 @@ const Redirect = () => {
   const handleback = ()=>{
     navigate('/')
   }
+
   const handletotalclick = ()=>{
-    navigate('/analytics')
+    navigate('/total-count', { state: { shorturl: `${shortId}` } })
   }
 
   return (
@@ -68,7 +69,7 @@ const Redirect = () => {
           <p className='text-center'>Long URL : <a className='text-blue-600 hover:underline' href={originalURL} target="_blank" rel="noopener noreferrer">
           {originalURL}</a></p>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col gap-2 mt-2'>
           <button className='bg-blue-600 cursor-pointer p-2 w-fit rounded-xl text-white' onClick={handletotalclick}>Total no of clicks on your short URL</button>
           <button className='bg-blue-600 cursor-pointer p-2 w-fit rounded-xl text-white' onClick={handleback}>Shorten another URL</button>
         </div>
