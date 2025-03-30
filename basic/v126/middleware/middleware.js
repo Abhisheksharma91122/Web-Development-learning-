@@ -1,0 +1,30 @@
+// import { NextResponse } from 'next/server'
+ 
+// // This function can be marked `async` if using `await` inside
+// export function middleware(request) {
+//     // return NextResponse.json({
+//     //     "name":"Abhishek",
+//     //     "Age":"20",
+//     // })
+//   return NextResponse.redirect(new URL('/home', request.url))
+// }
+ 
+// // See "Matching Paths" below to learn more
+// export const config = {
+//   matcher: '/about/:path*',
+// }
+
+
+// this is if condition middleware
+
+import { NextResponse } from 'next/server'
+ 
+export function middleware(request) {
+  if (request.nextUrl.pathname.startsWith('/about')) {
+    return NextResponse.rewrite(new URL('/home', request.url))
+  }
+ 
+  if (request.nextUrl.pathname.startsWith('/dashboard')) {
+    return NextResponse.rewrite(new URL('/dashboard/user', request.url))
+  }
+}
